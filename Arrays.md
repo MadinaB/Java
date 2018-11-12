@@ -9,30 +9,43 @@ extends Object
 
 ## asList()
 static <T> List<T> 
+
 asList(T... a)
 
+```
+List list1 = Arrays.asList(a);
+```
 ## binarySearch()
 - binarySearch(int[] a, int fromIndex, int toIndex, int key)
 - binarySearch(int[] a, int key)
+```
+Arrays.binarySearch(intArr,intKey))
+```
 
 ## copyOf()
 - copyOf(int[] original, int newLength)
 
 Integer[] newIntList = Arrays.copyOf(intList, 5);
 
+
 ## copyOfRange()
 - copyOfRange(int[] original, int from, int to)
+
 Copies the specified range of the specified array into a new array.
 
 ## deepEquals()
 deep means that you compare contents of your objects recursively until all you need to compare is primitive fields.
 static boolean     
+
 - deepEquals(Object[] a1, Object[] a2)
+
 Returns true if the two specified arrays are deeply equal to one another.
 
 ## equals()
 static boolean   
+
 equals(Object[] a, Object[] a2)
+
 Returns true if the two specified arrays of Objects are equal to one another.
 
 ## fill()
@@ -51,6 +64,10 @@ Sorts the specified array into ascending numerical order.
 
 - static void     sort(int[] a, int fromIndex, int toIndex)
 Sorts the specified range of the array into ascending order.
+
+```
+Arrays.sort(intArr); 
+```
 
 
 

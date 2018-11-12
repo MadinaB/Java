@@ -57,10 +57,28 @@ Returns the number of elements in this collection.
 ## toArray()
 - Object[]    
 Returns an array containing all of the elements in this collection.
-  
+```
+ArrayList<Integer> list = new ArrayList<>();
+list.add(5);
+list.toArray();
+```
+
+
 ## toArray(T[] a)
 - <T> T[] 
 Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array.
+```
+Integer[] myArray = new Integer[myList.size()];
+myList.toArray(myArray);
+```
+or
+```
+Integer[] myArray = myList.toArray(new Integer[myList.size()]);
+```
+or
+```
+Integer[] myArray = myList.toArray(new Integer[0]);
+```
 
 
 ---
@@ -100,6 +118,11 @@ Replaces the element at the specified position in this list with the specified e
 ## subList(int fromIndex, int toIndex)
 - List<E>
 Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.
+
+```
+someList.subList(3, 7).clear();
+```
+
 ## toArray()
 - Object[] 
 Returns an array containing all of the elements in this list in proper sequence (from first to last element).
